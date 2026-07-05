@@ -4,35 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>التحقق من الوثيقة</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z'/%3E%3C/svg%3E"
-                 class="verified-icon" alt="✓" />
-            <h1>تم التحقق</h1>
-            <span class="verified-badge">VERIFIED</span>
-        </div>
-    </header>
-    <main>
-        <div class="card" id="resultCard">
-            <div class="card-body">
-                <div class="field">
-                    <span class="field-label">رقم الوثيقة</span>
-                    <span class="field-value" id="docNumber">---</span>
+    <div class="container">
+        <!-- القسم العلوي - أخضر -->
+        <div class="header-green">
+            <div class="verified-container">
+                <div class="checkmark-circle">
+                    <span class="checkmark">✓</span>
                 </div>
-                <div class="field">
-                    <span class="field-label">تاريخ الإصدار</span>
-                    <span class="field-value" id="issueDate">---</span>
+                <h1 class="verified-title">VERIFIED</h1>
+                <p class="verified-sub">تم التحقق من صحة الوثيقة</p>
+            </div>
+        </div>
+
+        <!-- بطاقة المعلومات -->
+        <div class="card">
+            <div class="card-body">
+                <div class="field-row">
+                    <div class="field-label">
+                        <span class="label-icon">📄</span>
+                        رقم الوثيقة
+                    </div>
+                    <div class="field-value" id="docNumber">---</div>
+                </div>
+                
+                <div class="field-row">
+                    <div class="field-label">
+                        <span class="label-icon">📅</span>
+                        تاريخ الإصدار
+                    </div>
+                    <div class="field-value" id="issueDate">---</div>
+                </div>
+
+                <div class="status-row">
+                    <span class="status-badge">✓ صالحة</span>
                 </div>
             </div>
         </div>
-    </main>
-    <footer>
-        <p>© 2026 نظام التحقق الإلكتروني - جميع الحقوق محفوظة</p>
-    </footer>
+
+        <div class="footer-green">
+            <p>© 2026 نظام التحقق الإلكتروني</p>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

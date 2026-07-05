@@ -1,0 +1,1 @@
+const p=new URLSearchParams(location.search);const c=p.get('v');fetch('data.json').then(r=>r.json()).then(d=>{let x=d.find(i=>i.code===c);if(!x){document.querySelector('.status').innerHTML='<span class=v>INVALID</span>';document.querySelector('.card').style.display='none';return;}doc.textContent=x.id;date.textContent=x.date;});

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>وثيقة غير صالحة</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <style>
         .error-page {
@@ -14,28 +14,75 @@
             justify-content: center;
             align-items: center;
             background: #f8f9fa;
+            padding: 20px;
         }
-        .error-icon { font-size: 5rem; color: #dc3545; margin-bottom: 1rem; }
-        .error-title { font-size: 3rem; font-weight: 800; color: #dc3545; margin-bottom: 0.5rem; }
-        .error-sub { font-size: 1.2rem; color: #6c757d; margin-bottom: 2rem; }
+        .error-circle {
+            width: 120px;
+            height: 120px;
+            background: #fee2e2;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            border: 4px solid #fecaca;
+        }
+        .error-icon {
+            font-size: 4.5rem;
+            color: #dc2626;
+        }
+        .error-title {
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: #dc2626;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+        .error-sub {
+            font-size: 1.1rem;
+            color: #6b7280;
+            margin-bottom: 2rem;
+            text-align: center;
+            max-width: 400px;
+        }
         .btn-home {
-            background: #198754;
+            background: #1a8d4c;
             color: white;
-            padding: 0.8rem 2.5rem;
+            padding: 0.9rem 2.8rem;
             border-radius: 50px;
             text-decoration: none;
-            font-weight: 600;
-            transition: 0.3s;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            font-family: 'Cairo', sans-serif;
         }
-        .btn-home:hover { background: #157347; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(25,135,84,0.3); }
+        .btn-home:hover {
+            background: #0d6e3a;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(26, 141, 76, 0.35);
+        }
+        .error-code {
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+            color: #9ca3af;
+            background: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+        }
     </style>
 </head>
 <body>
     <div class="error-page">
-        <div class="error-icon">❌</div>
-        <h1 class="error-title">INVALID DOCUMENT</h1>
-        <p class="error-sub">رقم التحقق غير صالح أو الوثيقة غير موجودة</p>
-        <a href="index.html" class="btn-home">العودة إلى التحقق</a>
+        <div class="error-circle">
+            <span class="error-icon">✕</span>
+        </div>
+        <h1 class="error-title">INVALID</h1>
+        <p class="error-sub">⚠️ رقم التحقق غير صحيح أو الوثيقة غير موجودة في نظامنا</p>
+        <a href="index.html" class="btn-home">↺ العودة إلى التحقق</a>
+        <div class="error-code">يرجى التأكد من الرابط أو التواصل مع الدعم</div>
     </div>
 </body>
 </html>

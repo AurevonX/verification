@@ -1,1 +1,32 @@
-body{margin:0;font-family:Arial;background:#fff;display:flex;flex-direction:column;min-height:100vh}header,footer{height:60px;background:#1B5E20}main{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center}.status{display:flex;gap:12px;align-items:center;margin-bottom:30px}.check{font-size:60px;color:#1B5E20}.v{font-size:36px;font-weight:bold}.card{display:flex;gap:80px;padding:30px 40px;border:1px solid #ddd;border-radius:12px}.t{color:#666;font-size:14px;margin-bottom:10px}#doc,#date{font-size:22px;font-weight:bold}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Cairo', sans-serif; background: #f8f9fa; min-height: 100vh; display: flex; flex-direction: column; color: #212529; }
+header { background: linear-gradient(135deg, #198754, #146c43); padding: 2rem 1.5rem; text-align: center; box-shadow: 0 4px 20px rgba(25,135,84,0.25); }
+.header-content { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+.verified-icon { width: 56px; height: 56px; background: rgba(255,255,255,0.2); border-radius: 50%; padding: 12px; margin-bottom: 0.25rem; }
+header h1 { color: white; font-size: 2.2rem; font-weight: 800; letter-spacing: 1px; }
+.verified-badge { background: rgba(255,255,255,0.2); color: white; padding: 0.3rem 1.5rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; letter-spacing: 2px; border: 1px solid rgba(255,255,255,0.3); }
+main { flex: 1; display: flex; justify-content: center; align-items: center; padding: 2rem 1.5rem; }
+.card { background: white; border-radius: 24px; padding: 2.5rem 2.8rem; max-width: 580px; width: 100%; box-shadow: 0 15px 50px rgba(0,0,0,0.07), 0 5px 20px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.03); transition: transform 0.3s ease; }
+.card:hover { transform: translateY(-4px); }
+.card-body { display: flex; flex-direction: column; gap: 1.8rem; }
+.field { display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.8rem; border-bottom: 2px dashed #e9ecef; }
+.field:last-child { border-bottom: none; padding-bottom: 0; }
+.field-label { font-weight: 600; color: #495057; font-size: 0.95rem; letter-spacing: 0.5px; }
+.field-value { font-weight: 700; color: #198754; font-size: 1.15rem; text-align: left; direction: ltr; }
+footer { background: linear-gradient(135deg, #198754, #146c43); padding: 1.5rem; text-align: center; margin-top: auto; }
+footer p { color: rgba(255,255,255,0.85); font-size: 0.9rem; font-weight: 300; }
+@media (max-width: 600px) {
+    header h1 { font-size: 1.6rem; }
+    .card { padding: 1.8rem 1.5rem; }
+    .field { flex-direction: column; align-items: flex-start; gap: 0.3rem; padding-bottom: 1rem; }
+    .field-value { font-size: 1rem; width: 100%; padding-top: 0.2rem; border-top: 1px solid #f1f3f5; }
+    .verified-icon { width: 44px; height: 44px; padding: 10px; }
+    .generator-page { margin: 1.5rem auto; }
+    .generator-card { padding: 1.5rem; }
+    .generator-card h2 { font-size: 1.4rem; }
+}
+@media (max-width: 400px) {
+    .card { padding: 1.2rem 1rem; }
+    .field-label { font-size: 0.8rem; }
+    .field-value { font-size: 0.9rem; }
+}

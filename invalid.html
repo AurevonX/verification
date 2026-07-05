@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>وثيقة غير صالحة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #f8f9fa;
+        }
+        .error-icon { font-size: 5rem; color: #dc3545; margin-bottom: 1rem; }
+        .error-title { font-size: 3rem; font-weight: 800; color: #dc3545; margin-bottom: 0.5rem; }
+        .error-sub { font-size: 1.2rem; color: #6c757d; margin-bottom: 2rem; }
+        .btn-home {
+            background: #198754;
+            color: white;
+            padding: 0.8rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .btn-home:hover { background: #157347; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(25,135,84,0.3); }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <div class="error-icon">❌</div>
+        <h1 class="error-title">INVALID DOCUMENT</h1>
+        <p class="error-sub">رقم التحقق غير صالح أو الوثيقة غير موجودة</p>
+        <a href="index.html" class="btn-home">العودة إلى التحقق</a>
+    </div>
+</body>
+</html>

@@ -28,6 +28,7 @@
 
 ## 📌 روابط الأمثلة
 
+- https://farisgli.github.io/verification/?v=
 - https://aurevonx.github.io/verification/?v=9H7X2LQ8P4MN6K3T
 - https://aurevonx.github.io/verification/?v=K8L7M5Q9X2Z4V6B1
 - https://aurevonx.github.io/verification/?v=Q2W3E4R5T6Y7U8I9
